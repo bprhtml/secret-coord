@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Coord</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -24,7 +23,10 @@
         </div>
     </div>
     <div class="main-container">
-        <div class="map"></div>
+        <div id="map"></div>
     </div>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDflS5tOPRDRWwvJctCnXnvU03HJaIEg7k&callback=initMap"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -50,4 +50,17 @@
 }
 .menu-button:active {
     background-color: black;
+}
+
+.main-container {
+    width: 100vw;
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    height: 60vh;
+    width: 60vh;
 }
