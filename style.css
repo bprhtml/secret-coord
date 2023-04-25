@@ -24,32 +24,19 @@
     width: auto;
 }
 
-.header-left {
+.menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-left>button>img {
+.menu-container>button>img {
     height: 2vh;
     width: auto;
 }
 
-.menu-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid transparent;
-    background-color: transparent;
-    border-radius: 0.3vh;
-    height: 3vh;
-    width: 3vh;
-}
-.menu-button:hover {
-    border: 3px solid blue;
-}
-.menu-button:active {
-    background-color: black;
+.dropdown-menu {
+    display: none
 }
 
 .main-container {
@@ -65,3 +52,4 @@
     height: 60vh;
     width: 60vh;
 }
+

@@ -1,3 +1,19 @@
+// MENU
+
+const menuButton = document.querySelector('.menu-button')
+const dropdownMenu = document.querySelector('.dropdown-menu')
+const closeButton = document.querySelector('.close-button')
+menuButton.addEventListener('click', () => {
+  dropdownMenu.style.display = "flex"
+})
+closeButton.addEventListener('click', () => {
+  dropdownMenu.style.display = "none"
+})
+
+
+
+
+// MAP
 
 let markers = []
 const spanishSwim = document.getElementById('spanish-swim')
@@ -57,13 +73,6 @@ function printMarkers(array, map) {
     });
     markers.push(marker);
   })
-}
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
 }
 
 
