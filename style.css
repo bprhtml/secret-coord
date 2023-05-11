@@ -4,13 +4,25 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     width: 100vw;
     height: 6vh;
     background-color: #34568B;
     padding-inline: 4vw;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div>a {
+    text-decoration: none;
+    color: white;
+    padding: 1vw;
 }
 
 .brand-card {

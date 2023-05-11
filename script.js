@@ -1,6 +1,7 @@
 import { spanishLocations } from "./coordinates.js"
 import { worldLocations } from "./coordinates.js"
 import { devonLocations } from "./coordinates.js"
+import { allLocations } from "./coordinates.js"
 
 // MAP
 
@@ -11,13 +12,23 @@ const mainContainer = document.querySelector('.main-container')
 
 const devonBtn = document.createElement('button');
 devonBtn.innerHTML = "Devon Beauty Spots!";
-devonBtn.classList = "location-button";
+devonBtn.classList.add("location-button");
 mainContainer.appendChild(devonBtn)
+
+const allBtn = document.createElement('button');
+allBtn.innerHTML = "All Beauty Spots!";
+allBtn.classList.add("location-button");
+mainContainer.appendChild(allBtn)
 
 
 function initMapWithMarker(array) {
   printMarkers(array, map)
 }
+
+const map = new google.maps.Map(document.getElementById("map"), {
+  zoom: 3.3,
+  center: { lat: 55.4636, lng: 11.6206 },
+});
 
 function printMarkers(array, map) {
   markers.forEach((marker) => marker.setMap(null));
@@ -67,4 +78,12 @@ devonBtn.addEventListener('click', () => {
     center: { lat: 50.734377, lng: -3.883316 },
   });
   printMarkers(devonLocations, map)
+})
+
+allBtn.addEventListener('click', () => {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 3.3,
+    center: { lat: 55.4636, lng: 11.6206 },
+  });
+  printMarkers(allLocations, map)
 })
