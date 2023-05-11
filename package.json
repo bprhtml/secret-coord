@@ -1,0 +1,16 @@
+{
+  "name": "secret-coord-main",
+  "version": "1.0.0",
+  "description": "A website where users can find, and share, coordinates of hidden beauty spots around Europe. An idea birthed whilst I was searching websites for hidden coastal spots in Spain.",
+  "main": "coordinates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
