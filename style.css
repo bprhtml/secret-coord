@@ -26,9 +26,9 @@ header>div>a {
 }
 
 .brand-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: fixed;
+    left: 50%;
+    right: 50%;
 }
 
 .brand-card>a>img {
@@ -63,9 +63,21 @@ header>div>a {
 #map {
     height: 60vh;
     width: 60vh;
+    margin: 2vh;
 }
 
-.dropdown-menu {
-    display: flex;
-    flex-direction: column;
+.button-container>button {
+    background-color: #34568B;
+    color: yellow;
+    margin: 1vw;
+}
+
+.location-button {
+
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 16vw 16vw;
+    grid-template-rows: 7vh 7vh 7vh;
 }

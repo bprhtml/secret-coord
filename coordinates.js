@@ -28,7 +28,24 @@ export const cyprusLocations = [
     [{ lat: 34.8571, lng: 32.4089}, "Mavrokolympos Dam"]
 ]
 
+export const germanLocations = [
+    [{ lat: 50.5969, lng: 6.4255}, "Monschau Eifel National Park"],
+    [{ lat: 50.1498, lng: 7.7216}, "Sankt Goarshausen"],
+    [{ lat: 51.2195, lng: 6.9756}, "Neanderthal Valley"],
+    [{ lat: 50.9754, lng: 11.022}, "Erfurt "],
+    [{ lat: 51.9386, lng: 7.6172}, "Münster"],
+    [{ lat: 49.0103, lng: 12.106}, "Regensburg"],
+    [{ lat: 47.4906, lng: 11.096}, "Garmisch-Partenkirchen"],
+    [{ lat: 48.4163, lng: 9.7838}, "Blautopf, Blaubeuren"],
+    [{ lat: 47.5855, lng: 11.350}, "Walchensee"],
+    [{ lat: 50.1310, lng: 6.9257}, "Pulvermaar "],
+    [{ lat: 48.3142, lng: 8.1850}, "Schwarzwald"],
+    [{ lat: 47.5579, lng: 10.750}, "Schloss Neuschwanstein"],
+    [{ lat: 47.5527, lng: 12.918}, "Berchtesgaden National Park"],
+]
+
 export const allLocations = spanishLocations.concat(
     worldLocations, 
     devonLocations,
-    cyprusLocations);
+    cyprusLocations,
+    germanLocations);

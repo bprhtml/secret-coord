@@ -1,6 +1,7 @@
 import { spanishLocations } from "./coordinates.js"
 import { worldLocations } from "./coordinates.js"
 import { devonLocations } from "./coordinates.js"
+import { germanLocations } from "./coordinates.js"
 import { allLocations } from "./coordinates.js"
 
 // MAP
@@ -8,12 +9,17 @@ import { allLocations } from "./coordinates.js"
 let markers = []
 const spanishSwim = document.getElementById('spanish-swim')
 const classicBeauty = document.getElementById('classic-beauty')
-const mainContainer = document.querySelector('.main-container')
+const mainContainer = document.querySelector('.button-container')
 
 const devonBtn = document.createElement('button');
 devonBtn.innerHTML = "Devon Beauty Spots!";
 devonBtn.classList.add("location-button");
 mainContainer.appendChild(devonBtn)
+
+const germanBtn = document.createElement('button');
+germanBtn.innerHTML = "German Beauty Spots!";
+germanBtn.classList.add("location-button");
+mainContainer.appendChild(germanBtn)
 
 const allBtn = document.createElement('button');
 allBtn.innerHTML = "All Beauty Spots!";
@@ -66,8 +72,8 @@ spanishSwim.addEventListener('click', () => {
 
 classicBeauty.addEventListener('click', () => {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 1.0,
-    center: { lat: 0, lng: 0 },
+    zoom: 3.3,
+    center: { lat: 55.4636, lng: 11.6206 },
   });
   printMarkers(worldLocations, map)
 })
@@ -79,6 +85,16 @@ devonBtn.addEventListener('click', () => {
   });
   printMarkers(devonLocations, map)
 })
+
+germanBtn.addEventListener('click', () => {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 5.0,
+    center: { lat: 51.4185, lng: 10.3667 },
+  });
+  printMarkers(germanLocations, map)
+})
+
+
 
 allBtn.addEventListener('click', () => {
   const map = new google.maps.Map(document.getElementById("map"), {
