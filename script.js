@@ -6,25 +6,43 @@ import { allLocations } from "./coordinates.js"
 
 // MAP
 
+let buttHid = true;
 let markers = []
-const spanishSwim = document.getElementById('spanish-swim')
-const classicBeauty = document.getElementById('classic-beauty')
-const mainContainer = document.querySelector('.button-container')
+const spanishSwim = document.getElementById('spanish-swim');
+const classicBeauty = document.getElementById('classic-beauty');
+const mainContainer = document.querySelector('.button-container');
+mainContainer.style.visibility = "hidden"
+const beautyDropdwn = document.querySelector('.beauty-dropdown');
+
+beautyDropdwn.addEventListener('click', () => {
+  console.log(buttHid)
+  if (buttHid === true) {
+    buttHid = false
+  } else if (buttHid === false) {
+    buttHid = true
+  }
+  if (buttHid === false) {
+    mainContainer.style.visibility = "visible"
+  } else if (buttHid === true) {
+    mainContainer.style.visibility = "hidden"
+  }
+})
+
 
 const devonBtn = document.createElement('button');
 devonBtn.innerHTML = "Devon Beauty Spots!";
 devonBtn.classList.add("location-button");
-mainContainer.appendChild(devonBtn)
+mainContainer.appendChild(devonBtn);
 
 const germanBtn = document.createElement('button');
 germanBtn.innerHTML = "German Beauty Spots!";
 germanBtn.classList.add("location-button");
-mainContainer.appendChild(germanBtn)
+mainContainer.appendChild(germanBtn);
 
 const allBtn = document.createElement('button');
 allBtn.innerHTML = "All Beauty Spots!";
 allBtn.classList.add("location-button");
-mainContainer.appendChild(allBtn)
+mainContainer.appendChild(allBtn);
 
 
 function initMapWithMarker(array) {

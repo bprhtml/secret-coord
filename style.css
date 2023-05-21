@@ -9,7 +9,6 @@ header {
     justify-content: space-between;
     width: 100vw;
     height: 6vh;
-    background-color: #34568B;
     padding-inline: 4vw;
 }
 
@@ -21,34 +20,20 @@ header>div {
 
 header>div>a {
     text-decoration: none;
-    color: white;
+    color: #34568B;
     padding: 1vw;
 }
 
-.brand-card {
-    position: fixed;
-    left: 50%;
-    right: 50%;
+.beauty-dropdown {
+  background-color: white;
+  border: none;
+  color: #34568B;
+  font-size: 1.8vh;
 }
 
 .brand-card>a>img {
     height: 4vh;
     width: auto;
-}
-
-.menu-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-container>button>img {
-    height: 2vh;
-    width: auto;
-}
-
-.dropdown-menu {
-    display: none
 }
 
 .main-container {
@@ -72,12 +57,10 @@ header>div>a {
     margin: 1vw;
 }
 
-.location-button {
-
-}
-
 .button-container {
-    display: grid;
-    grid-template-columns: 16vw 16vw;
-    grid-template-rows: 7vh 7vh 7vh;
+  display: grid;
+  grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
 }
+
+
+/* Header */
